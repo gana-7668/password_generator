@@ -15,7 +15,7 @@ while True:
         try:
             password_length=int(input("enter desired password length (defalt password length is 15)::"))
 
-        except:
+        except ValueError:
             print("invalid input. using default password length:")
 
         if password_length<=0:
